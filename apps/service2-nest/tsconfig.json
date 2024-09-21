@@ -1,4 +1,5 @@
 {
+  "extends": ["../../tsconfig.root.json"],
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
