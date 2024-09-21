@@ -8,3 +8,5 @@
 !.yarn/versions
 # Turbo
 .turbo
+# Vitest temp files
+vitest.config.ts.timestamp*
