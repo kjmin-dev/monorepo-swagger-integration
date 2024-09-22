@@ -1,5 +1,6 @@
 {
   "tasks": {
+    "dev": {},
     "build": {},
     "test": {},
     "test:e2e": {},

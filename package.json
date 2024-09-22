@@ -10,11 +10,13 @@
     "apps/*"
   ],
   "scripts": {
+    "dev": "turbo dev",
     "build": "turbo build",
     "test": "turbo test",
     "test:e2e": "turbo test:e2e",
     "lint": "eslint \"**/{src,test}/**/*.ts\"",
-    "format": "prettier --write \"**/{src,test}/**/*.ts\""
+    "format": "prettier --write \"**/{src,test}/**/*.ts\"",
+    "swagger": "docker compose -p msa-swagger-integration -f docker/docker-compose.swagger.yml up -d "
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
