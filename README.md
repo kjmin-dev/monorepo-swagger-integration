@@ -18,3 +18,19 @@ corepack enable && corepack prepare # or install `packageManager` specified in p
 ```sh
 yarn install
 ```
+
+3. Run microservices
+
+```sh
+yarn dev
+```
+
+4. Run docker compose (You need to have docker compose installed)
+
+```sh
+yarn swagger
+```
+
+5. Open http://localhost:8080/
+
+![swagger-preview](./docs/swagger-preview.png)
