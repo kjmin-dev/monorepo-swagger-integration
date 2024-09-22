@@ -12,9 +12,9 @@
   "scripts": {
     "build": "turbo build",
     "test": "turbo test",
+    "test:e2e": "turbo test:e2e",
     "lint": "eslint \"**/{src,test}/**/*.ts\"",
-    "format": "prettier --write \"**/{src,test}/**/*.ts\"",
-    "swagger:integration": "turbo run swagger:integration"
+    "format": "prettier --write \"**/{src,test}/**/*.ts\""
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
