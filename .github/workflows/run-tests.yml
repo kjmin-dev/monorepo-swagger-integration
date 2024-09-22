@@ -6,12 +6,16 @@ on:
     paths:
       - '**/src/**'
       - '**/test/**'
+      - 'apps/**/src/**'
+      - 'apps/**/test/**'
   push:
     branches:
-      - main
+      - 'main'
     paths:
       - '**/src/**'
       - '**/test/**'
+      - 'apps/**/src/**'
+      - 'apps/**/test/**'
 jobs:
   test:
     runs-on: ubuntu-latest
