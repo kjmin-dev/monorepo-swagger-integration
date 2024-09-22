@@ -11,7 +11,7 @@ on:
     paths:
       - 'apps/**/src/**'
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
