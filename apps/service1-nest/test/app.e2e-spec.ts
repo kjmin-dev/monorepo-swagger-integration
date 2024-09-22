@@ -15,7 +15,8 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer()).get('/').expect(200).expect('Hello World!');
+  test('/hello (GET)', () => {
+    request(app.getHttpServer()).get('/hello').query({}).expect(200).expect('Hello World!');
+    request(app.getHttpServer()).get('/hello').query({ name: 'John' }).expect(200).expect('Hello John!');
   });
 });
